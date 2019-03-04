@@ -1,0 +1,28 @@
+{
+  "name": "miniproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --output-style compressed -o dist/css src/scss",
+    "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
+    "build:css": "npm run scss && npm run autoprefixer",
+    "watch:css": "onchange  \"src/scss/*.scss \" -- npm run build:css",
+    "serve": "live-server",
+    "dev": "concurrently \"npm run serve\" \"npm run watch:css\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.4.9",
+    "concurrently": "^4.1.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.11.0",
+    "onchange": "^5.2.0",
+    "postcss-cli": "^6.1.2"
+  },
+  "browserslist": [
+    "last 4 version"
+  ]
+}

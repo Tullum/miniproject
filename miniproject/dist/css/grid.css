@@ -1,0 +1,201 @@
+/*ALL PAGES BEGINS*/
+
+.wrapper{
+    height: 100%;
+   
+}
+
+.over-header {
+    display: grid;
+    grid-template-columns: 9fr repeat(3, 1fr);
+    grid-template-rows: 45px ; 
+    grid-column: 1 / -1; 
+}
+
+.down-header{
+    display: grid;
+    grid-template-columns: 7fr 5fr 1fr ;
+    grid-template-rows: auto;
+
+}
+
+/* NAVBAR CONTENT BEGIN*/
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) ;
+    grid-template-rows: auto;  
+}
+
+
+
+/* NAVBAR CONTENT ENDS*/
+
+
+.over-footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr) );
+    grid-template-rows: auto ;
+
+}
+
+.footer-boxes
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto ;
+}
+
+.down-footer{
+    display: grid;
+    grid-template-columns: 8fr repeat(2, 2fr);
+    grid-template-rows: 45px; 
+    grid-column: 1 / -1;
+}
+
+/*ALL PAGES ENDS*/
+
+
+/*INDEX BEGINS*/
+
+/*IMG-CONTAINER SETUP BEGINS*/
+
+.img-container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-flow: dense;
+}
+
+.big {
+grid-column: span 2;
+grid-row: span 2;
+
+}
+
+
+
+/*IMG-CONTAINER SETUP ENS*/
+
+.box-container{
+    width: 350px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: auto;
+  
+}
+
+.img-box{
+   
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "i ti ti ti ti ti ti ti ti ti ti ti"
+    "i te te te te te te te te te b b";
+}
+
+.img-box__image {
+    grid-area: i;
+}
+
+.img-box_title {
+    grid-area: ti;
+}
+
+.img-box__text {
+    grid-area: te;
+}
+
+.img-box__btn {
+    grid-area: b;
+}
+
+/*INDEX ENDS*/
+
+/*BRAND BEGINS*/
+
+.brand-container{
+    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+    grid-template-areas: 
+        ". . i ti ti ti ti ti ti ti . ."
+        ". . i ti2 ti2 ti2 ti2 ti2 ti2 ti2 . ."
+        ". . i te te te te te te te . .";
+}
+
+.brand-container2{
+    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+    grid-template-areas: 
+        ". .  ti ti ti ti ti ti ti i . ."
+        ". .  ti2 ti2 ti2 ti2 ti2 ti2 ti2 i . . "
+        ". .  te te te te te te te i . .";
+}
+
+.brand-container3{
+    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+    grid-template-areas: 
+        ". . i ti ti ti ti ti ti ti . ."
+        ". . i ti2 ti2 ti2 ti2 ti2 ti2 ti2 . ."
+        ". . i te te te te te te te . .";
+}
+
+.brand-container4{
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-template-rows: 1fr;
+    grid-auto-flow: dense;
+}
+
+
+.brand-container__image {
+    grid-area: i;
+}
+
+.brand-container__title {
+    grid-area: ti;
+}
+
+.brand-container__title--secondary{
+    grid-area: ti2;
+}
+
+.branc-contailer__text {
+    grid-area: te;
+}
+
+
+.brand-container4-img{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-template-rows: 1fr;
+    grid-auto-flow: dense;
+}
+
+
+/*BRAND ENDS*/
+
+/*REGISTER BEGINS */
+
+.reg-sign-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto; 
+    grid-column: 1 / -1;
+}
+
+/*REGISTER ENDS*/
